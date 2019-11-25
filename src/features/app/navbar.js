@@ -10,6 +10,17 @@ import p3 from '../../image/r3.jpg'
 import p4 from '../../image/r4.jpg'
 import p5 from '../../image/r5.jpg'
 import p6 from '../../image/r6.jpg'
+import p7 from '../../image/r7.jpg'
+import p8 from '../../image/r8.jpg'
+import p9 from '../../image/r9.jpg'
+import p10 from '../../image/r10.jpg'
+import p11 from '../../image/r11.jpg'
+import p12 from '../../image/r12.jpg'
+import p13 from '../../image/r13.jpg'
+import p14 from '../../image/r14.jpg'
+import p15 from '../../image/r15.jpg'
+import p16 from '../../image/r16.jpg'
+import p17 from '../../image/r17.jpg'
 import '../../App.css'
 
 const Navbar = (props) => {
@@ -49,20 +60,90 @@ const Navbar = (props) => {
                 </div>
                 <div> <img className="img-fluid " src={c1} alt="foodImage" /></div>
             </div>
-            <div className="container pt-3">
-                <div className="text-center" style={{ fontWeight: "30px" }}><h3> BREAKFAST </h3></div>
-                <div className="text-center">9:00AM-11:00AM</div>
-                <div className="d-flex pt-3">
-                    <div className="">
+            <div className="container py-3">
+                <div>
+                    <div className="text-center" style={{ fontWeight: "30px" }}><h3> BREAKFAST </h3></div>
+                    <div className="text-center">9:00AM-11:00AM</div>
+                    <div className="row pt-3 justify-content-center ">
                         <MenuComponent img={p1} foodName="ROAST &amp; VEGETABLES"
-                            foodDesc=" Egg Beaters scrambled with slow-roasted tomatoes, onion, fresh spinach and mushrooms. "
+                            foodDesc=" Egg tomatoes, onion,spinach and mushrooms. "
+                            price="30" />
+                        <MenuComponent img={p2} foodName="ROAST &amp; VEGETABLES"
+                            foodDesc=" Egg tomatoes, onion,spinach and mushrooms. "
                             price="30" />
                     </div>
-                    {/* <div className="">
-                        <MenuComponent img={p2} foodName="ROAST &amp; VEGETABLES"
-                            foodDesc=" Egg Beaters scrambled with slow-roasted tomatoes, onion, fresh spinach and mushrooms. "
+                    <div className="row justify-content-center">
+                        <MenuComponent img={p3} foodName="ROAST &amp; VEGETABLES"
+                            foodDesc=" Egg tomatoes, onion,spinach and mushrooms. "
                             price="30" />
-                    </div> */}
+                        <MenuComponent img={p4} foodName="ROAST &amp; VEGETABLES"
+                            foodDesc=" Egg tomatoes, onion,spinach and mushrooms. "
+                            price="30" />
+                    </div>
+                    <div className="row justify-content-center">
+                        <MenuComponent img={p5} foodName="ROAST &amp; VEGETABLES"
+                            foodDesc=" Egg tomatoes, onion,spinach and mushrooms. "
+                            price="30" />
+                        <MenuComponent img={p6} foodName="ROAST &amp; VEGETABLES"
+                            foodDesc=" Egg tomatoes, onion,spinach and mushrooms. "
+                            price="30" />
+                    </div>
+                </div>
+                <div className="pt-3">
+                    <div className="text-center" style={{ fontWeight: "30px" }}><h3> LUNCH </h3></div>
+                    <div className="text-center">11:00AM-4:00PM</div>
+                    <div className="row pt-3 justify-content-center ">
+                        <MenuComponent img={p7} foodName="ROAST &amp; VEGETABLES"
+                            foodDesc=" Egg tomatoes, onion,spinach and mushrooms. "
+                            price="30" />
+                        <MenuComponent img={p8} foodName="ROAST &amp; VEGETABLES"
+                            foodDesc=" Egg tomatoes, onion,spinach and mushrooms. "
+                            price="30" />
+                    </div>
+                    <div className="row justify-content-center">
+                        <MenuComponent img={p9} foodName="ROAST &amp; VEGETABLES"
+                            foodDesc=" Egg tomatoes, onion,spinach and mushrooms. "
+                            price="30" />
+                        <MenuComponent img={p10} foodName="ROAST &amp; VEGETABLES"
+                            foodDesc=" Egg tomatoes, onion,spinach and mushrooms. "
+                            price="30" />
+                    </div>
+                    <div className="row justify-content-center">
+                        <MenuComponent img={p11} foodName="ROAST &amp; VEGETABLES"
+                            foodDesc=" Egg tomatoes, onion,spinach and mushrooms. "
+                            price="30" />
+                        <MenuComponent img={p6} foodName="ROAST &amp; VEGETABLES"
+                            foodDesc=" Egg tomatoes, onion,spinach and mushrooms. "
+                            price="30" />
+                    </div>
+                </div>
+                <div className="pt-3">
+                    <div className="text-center" style={{ fontWeight: "30px" }}><h3> DRINK </h3></div>
+                    <div className="text-center">11:00AM-4:00PM</div>
+                    <div className="row pt-3 justify-content-center ">
+                        <MenuComponent img={p12} foodName="ROAST &amp; VEGETABLES"
+                            foodDesc=" Egg tomatoes, onion,spinach and mushrooms. "
+                            price="30" />
+                        <MenuComponent img={p13} foodName="ROAST &amp; VEGETABLES"
+                            foodDesc=" Egg tomatoes, onion,spinach and mushrooms. "
+                            price="30" />
+                    </div>
+                    <div className="row justify-content-center">
+                        <MenuComponent img={p14} foodName="ROAST &amp; VEGETABLES"
+                            foodDesc=" Egg tomatoes, onion,spinach and mushrooms. "
+                            price="30" />
+                        <MenuComponent img={p15} foodName="ROAST &amp; VEGETABLES"
+                            foodDesc=" Egg tomatoes, onion,spinach and mushrooms. "
+                            price="30" />
+                    </div>
+                    <div className="row justify-content-center">
+                        <MenuComponent img={p16} foodName="ROAST &amp; VEGETABLES"
+                            foodDesc=" Egg tomatoes, onion,spinach and mushrooms. "
+                            price="30" />
+                        <MenuComponent img={p17} foodName="ROAST &amp; VEGETABLES"
+                            foodDesc=" Egg tomatoes, onion,spinach and mushrooms. "
+                            price="30" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -70,13 +151,13 @@ const Navbar = (props) => {
 }
 
 const MenuComponent = ({ img, foodName, foodDesc, price }) => (
-    <div className="d-flex flex-row pt-3 ">
-        <div className="hovereffect">
-            <img className="img-fluid" src={img} />
+    <div className="col-6 row ">
+        <div className="hovereffect col-lg-6 mb-1 p-1  ">
+            <img className="img-fluid p-2" src={img} style={{ minWidth: '100%', minHeight: '100%' }} />
         </div>
-        <div className=" pl-3">
-            <h5>{foodName}</h5>
-            <p className="mb-0" style={{ fontStyle: "roboto" }}> {foodDesc}</p>
+        <div className=" col-lg-6">
+            <h6 className="pt-2">{foodName}</h6>
+            <p className="mb-0 " style={{ fontSize: "14px" }}> {foodDesc}</p>
             <p style={{ fontSize: "28px", color: "#8E7037", fontWeight: "600" }}>$ <span>{price}</span></p>
         </div>
     </div>
